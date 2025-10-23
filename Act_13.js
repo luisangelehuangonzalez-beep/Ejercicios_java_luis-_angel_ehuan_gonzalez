@@ -1,6 +1,13 @@
-function sumaDePares() {
-  let num1 = parseInt(prompt("Ingrese el primer número:"));
-  let num2 = parseInt(prompt("Ingrese el segundo número:"));
+// Algoritmo actividad13 en JavaScript
+const prompt = require('prompt-sync')();
 
-  num1 >= 500 && num1 <= 800 && num1 % 2==0 && num2 >= 500 && num2 <= 800 && num2 % 2 == 0 
-  let suma =
+let suma = 0;
+
+for (let pares = 500; pares <= 800; pares++) {
+    if (pares % 2 === 0) {
+        suma += pares;
+    }
+}
+
+console.log("La sumatoria de los números pares entre 500 y 800 es:", suma);
+
