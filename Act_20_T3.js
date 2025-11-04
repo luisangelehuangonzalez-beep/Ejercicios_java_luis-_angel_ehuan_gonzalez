@@ -1,9 +1,11 @@
 const prompt=require("prompt-sync")();
+function sumanumeros(){
+let numero;
 let suma = 0;
-let numero = parseInt(prompt("Ingresa un numero (teclea 0 para terminar): "), 10);
-while(numero !== 0){
-    suma+=numero;
-    numero = parseInt(prompt("Ingresa un numero (teclea 0 para terminar): "), 10);
+while(numero != 0){
+numero=parseInt(prompt("ingresa el numero !=0"));
+    suma=suma+numero;
 }
-console.log("la suma de los numeros es: " +suma);
-
+console.log("la suma de los numeros es: ", suma);
+}
+sumanumeros();
